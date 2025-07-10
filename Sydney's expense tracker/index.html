@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sydney's Expense Tracker</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Sydney's Expense Tracker</h1>
+    <form id="expenseForm">
+      <input type="text" placeholder="Reason" id="reason" required />
+      <input type="number" placeholder="Amount" id="amount" required />
+      <select id="category" required>
+        <option value="" disabled selected>Select Category</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Other">Other</option>
+      </select>
+      <button>Add</button>
+    </form>
+    <button id="clearExpenses">Clear Expenses</button>
+    <ul id="expenseList"></ul>
+    <script src="script.js"></script>
+    <footer>
+      <p>Made with ❤️ by Sydney</p>
+    </footer>
+  </body>
+</html>
